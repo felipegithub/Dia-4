@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{First Main Section}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{First Subsection}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Second Subsection}{7}{0}{1}
+\beamer@sectionintoc {2}{Second Main Section}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Another Subsection}{14}{0}{2}
