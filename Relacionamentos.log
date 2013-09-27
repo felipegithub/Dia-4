@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  27 SEP 2013 09:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  27 SEP 2013 11:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -955,6 +955,20 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen185
+\extrarowheight=\dimen186
+\NC@list=\toks45
+\extratabsurround=\skip60
+\backup@length=\skip61
+)
+\everycr=\toks46
+\minrowclearance=\skip62
+)
 (/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemeCambridgeUS.sty
 Package: beamerthemeCambridgeUS 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
@@ -968,23 +982,39 @@ Package: beamerouterthemeinfolines 2010/07/10  (rcs-revision 445340293dde)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemebeaver.sty
 Package: beamercolorthemebeaver 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (./Relacionamentos.aux)
+)) (./Relacionamentos.aux
+
+LaTeX Warning: Label `label' multiply defined.
+
+
+LaTeX Warning: Label `label' multiply defined.
+
+
+LaTeX Warning: Label `label' multiply defined.
+
+
+LaTeX Warning: Label `label' multiply defined.
+
+
+LaTeX Warning: Label `label' multiply defined.
+
+)
 \openout1 = `Relacionamentos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1023,16 +1053,16 @@ LaTeX Font Info:    ... okay on input line 40.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count162
-\scratchdimen=\dimen185
+\scratchdimen=\dimen187
 \scratchbox=\box57
 \nofMPsegments=\count163
 \nofMParguments=\count164
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count165
-\MPscratchDim=\dimen186
+\MPscratchDim=\dimen188
 \MPnumerator=\count166
 \makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1050,7 +1080,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1060,56 +1090,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./Relacionamentos.out) (./Relacionamentos.out)
 \@outlinefile=\write7
 \openout7 = `Relacionamentos.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 40.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 40.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 40.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 40.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 40.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 40.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 40.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 40.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 40.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 40.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 40.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 40.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 40.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 40.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 40.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 42.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1141,7 +1171,7 @@ runsystem(pygmentize -S default -f latex > Relacionamentos.pyg)...executed.
 (./Relacionamentos.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 46.
+(Font)              size <5> substituted on input line 48.
 
 [1
 
@@ -1160,7 +1190,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \openout4 = `Relacionamentos.vrb'.
 
 
-(./Relacionamentos.vrb <images/pg.jpeg, id=162, 252.945pt x 200.75pt>
+(./Relacionamentos.vrb <images/pg.jpeg, id=163, 252.945pt x 200.75pt>
 File: images/pg.jpeg Graphic file (type jpg)
 
 <use images/pg.jpeg>
@@ -1174,19 +1204,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<images/mysql.jpg, id=163, 96.1191pt x 70.1019pt>
+<images/mysql.jpg, id=164, 96.1191pt x 70.1019pt>
 File: images/mysql.jpg Graphic file (type jpg)
  <use images/mysql.jpg>
 Package pdftex.def Info: images/mysql.jpg used on input line 9.
 (pdftex.def)             Requested size: 96.11884pt x 70.10172pt.
 
-<images/oracle.jpeg, id=164, 240.9pt x 135.50626pt>
+<images/oracle.jpeg, id=165, 240.9pt x 135.50626pt>
 File: images/oracle.jpeg Graphic file (type jpg)
  <use images/oracle.jpeg>
 Package pdftex.def Info: images/oracle.jpeg used on input line 17.
 (pdftex.def)             Requested size: 168.62883pt x 94.85371pt.
 
-<images/sqlite.jpeg, id=165, 306.14375pt x 144.54pt>
+<images/sqlite.jpeg, id=166, 306.14375pt x 144.54pt>
 File: images/sqlite.jpeg Graphic file (type jpg)
  <use images/sqlite.jpeg>
 Package pdftex.def Info: images/sqlite.jpeg used on input line 20.
@@ -1199,7 +1229,7 @@ e.jpeg>]
 \openout4 = `Relacionamentos.vrb'.
 
  (./Relacionamentos.vrb
-<images/sqliteman.png, id=196, 642.4pt x 401.5pt>
+<images/sqliteman.png, id=197, 642.4pt x 401.5pt>
 File: images/sqliteman.png Graphic file (type png)
  <use images/sqliteman.png>
 Package pdftex.def Info: images/sqliteman.png used on input line 5.
@@ -1218,7 +1248,51 @@ Package pdftex.def Info: images/sqliteman.png used on input line 5.
 
 ] [10
 
-] [11
+]pdfTeX warning (ext4): destination with the same identifier (name{label}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.209 \end{frame}
+                  [11
+
+] [12
+
+] [13
+
+]pdfTeX warning (ext4): destination with the same identifier (name{label}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{label}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \end{frame}
+                  [14
+
+]pdfTeX warning (ext4): destination with the same identifier (name{label}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 \end{frame}
+                 
+Overfull \hbox (20.59851pt too wide) in paragraph at lines 307--307
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{label}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 \end{frame}
+                 
+Overfull \vbox (11.19594pt too high) detected at line 307
+ []
+
+[15
+
+] [16
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonbook.pdf> </usr/share/te
 xmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
@@ -1231,11 +1305,12 @@ xmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@snm=\write10
 \openout10 = `Relacionamentos.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
- (./Relacionamentos.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+
+(./Relacionamentos.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
 Package rerunfilecheck Info: File `Relacionamentos.out' has not changed.
 (rerunfilecheck)             Checksum: 0E5E90047B3119112A48F517873C2B83;158.
 
@@ -1243,14 +1318,17 @@ Package rerunfilecheck Info: File `Relacionamentos.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 334.
  ) 
 Here is how much of TeX's memory you used:
- 17004 strings out of 495059
- 312012 string characters out of 3182030
- 393129 words of memory out of 3000000
- 19704 multiletter control sequences out of 15000+200000
- 11469 words of font info for 42 fonts, out of 3000000 for 9000
+ 17169 strings out of 495059
+ 314240 string characters out of 3182030
+ 396168 words of memory out of 3000000
+ 19849 multiletter control sequences out of 15000+200000
+ 18948 words of font info for 70 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,17n,66p,404b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
@@ -1260,10 +1338,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on Relacionamentos.pdf (11 pages, 234876 bytes).
+Output written on Relacionamentos.pdf (16 pages, 250676 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 41 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

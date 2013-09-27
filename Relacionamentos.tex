@@ -10,7 +10,9 @@
 % Imagens
 \usepackage{graphicx}
 
-
+% Tabela
+\usepackage{xcolor,colortbl}
+\definecolor{gray}{rgb}{0.87,0.87,0.87}
 
 \usetheme{CambridgeUS}
 
@@ -155,17 +157,24 @@
 
 \begin{frame}{Tabela}
 	\begin{center}
-		\begin{tabular}{| c | l | r |}
-			\hline
-				\textbf{CONTA}  &  \textbf{VALOR} \\
-				\hline
-				New York & 33,131 \\
-				\hline
-				Baltimore & 18,320 \\
-				\hline
-				Richmond (VA) & 3,761 \\
-				\hline
-		\end{tabular}
+		\begin{table}
+			\LARGE
+			\caption{\label{label}\Large Dividas.}
+			\begin{tabular}{ c | l }
+					\hline
+					\hline
+					\hline					
+					\cellcolor{gray} \textbf{CONTA}  & \cellcolor{gray}\textbf{VALOR} \\
+					\hline
+					Luz & 100.50 \\
+					\hline
+					Agua & 50.55 \\
+					\hline
+					Telefone & 45.50 \\
+					\hline
+					\hline
+			\end{tabular}% Tabulação
+		\end{table}
 	\end{center}
 \end{frame}
 
@@ -175,6 +184,127 @@
 \appendix
 \section<presentation>*{\appendixname}
 \subsection<presentation>*{For Further Reading}
+
+\begin{frame}{Index e Chave Primária}
+	\begin{center}
+		\begin{table}
+			\LARGE
+			\caption{\label{label}\Large Dividas.}
+			\begin{tabular}{ c | l | c}
+					\hline
+					\hline
+					\hline					
+					\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{CONTA}  & \cellcolor{gray}\textbf{VALOR} \\
+					\hline
+					1 & Luz & 100.50 \\
+					\hline
+					2 & Agua & 50.55 \\
+					\hline
+					3 & Telefone & 45.50 \\
+					\hline
+					\hline
+			\end{tabular}% Tabulação
+		\end{table}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Chave Estrangeira}
+	\begin{block}{\LARGE Chave Estrangeira - Conceito}
+		\begin{itemize}
+			\item \LARGE Index Especial que liga duas Tabelas para melhor aproveitamento
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Relacionamentos}{Tipos}
+	\begin{itemize} \itemsep 2em
+		\item{ \LARGE 1 x 1 }
+		\item{ \LARGE 1 x N }
+		\item{ \LARGE N x N }
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Cardinalidade}{1 e 1}
+	\begin{center}
+		\begin{table}
+			\Large
+			\caption{\label{label}\Large Pessoas.}
+			\begin{tabular}{ c | l | c}
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} \\
+				\hline
+				1 & Rodrigo Andrade Leal & 01/09/1994 \\
+				\hline
+				2 & Felipe Almeida Zamora & 05/10/1990 \\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+		\end{table}
+	\end{center}
+		
+	\begin{center}
+		\begin{table}
+			\Large
+			\caption{\label{label}\Large Documentos.}
+			\begin{tabular}{ l | l | l | l }
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF} & \cellcolor{gray}\textbf{PES-ID} \\
+				\hline
+				55 & 55997-65  & 555.999.777 & 2\\ 
+				\hline
+				56 &  56587-65 & 544.455.545 & 1\\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+		\end{table}				
+	\end{center}
+
+\end{frame}
+
+\begin{frame}{Cardinalidade}{1 e 1}
+	\begin{center}
+		\begin{table}
+			\Large
+			\caption{\label{label}\Large Pessoas.}
+			\begin{tabular}{ l | l | l | l}
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} & \cellcolor{gray}\textbf{DOC-ID} \\
+				\hline
+				1 & Rodrigo Andrade Leal & 01/09/1994 & 56\\
+				\hline
+				2 & Felipe Almeida Zamora & 05/10/1990 & 55\\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+		\end{table}
+	\end{center}
+		
+	\begin{center}
+		\begin{table}
+			\Large
+			\caption{\label{label}\Large Documentos.}
+			\begin{tabular}{ l | l | l }
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF} \\
+				\hline
+				55 & 55997-65  & 555.999.777\\ 
+				\hline
+				56 &  56587-65 & 544.455.545\\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+		\end{table}				
+	\end{center}
+
+\end{frame}
 
 \begin{frame}[allowframebreaks]
   \frametitle<presentation>{For Further Reading}

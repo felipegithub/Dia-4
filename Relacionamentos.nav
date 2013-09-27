@@ -34,8 +34,18 @@
 \headcommand {\beamer@subsectionentry {1}{2}{1}{11}{For Further Reading}}\headcommand {\beamer@subsectionpages {11}{10}}
 \headcommand {\slideentry {2}{1}{1}{11/11}{For Further Reading}{1}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@partpages {11}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@sectionpages {11}{11}}
-\headcommand {\beamer@documentpages {11}}
-\headcommand {\def \inserttotalframenumber {11}}
+\headcommand {\slideentry {2}{1}{2}{12/12}{For Further Reading}{1}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {2}{1}{3}{13/13}{For Further Reading}{1}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {2}{1}{4}{14/14}{For Further Reading}{1}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {2}{1}{5}{15/15}{For Further Reading}{1}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{1}{6}{16/16}{For Further Reading}{1}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {11}{16}}
+\headcommand {\beamer@subsectionpages {11}{16}}
+\headcommand {\beamer@sectionpages {11}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\def \inserttotalframenumber {16}}
