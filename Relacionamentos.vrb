@@ -1,22 +1,8 @@
-\par   \begin{itemize}
-  \item {
-    First item.
-    \pause % The slide will pause after showing the first item
-  }
-  \item {
-    Second item.
-  }
-  % You can also specify when the content should appear
-  % by using <n->:
-  \item<3-> {
-    Third item.
-  }
-  \item<4-> {
-    Fourth item.
-  }
-  % or you can use the \uncover command to reveal general
-  % content (not just \items):
-  \item<5-> {
-    Fifth item. \uncover<6->{Extra text in the fifth item.}
-  }
-  \end{itemize}
+\frametitle {SQLite 3}\framesubtitle {Default Rails}
+\begin{itemize}  \itemsep 2em
+\item{ \LARGE Banco de Dados Simples.}
+\item{ \LARGE Apenas para Estudo.}
+\item{ \LARGE Não deve ser usado em projetos robustos.}
+\item{ \LARGE Banco de dados localizado em um unico arquivo.}
+
+\end{itemize}
