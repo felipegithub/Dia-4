@@ -48,13 +48,14 @@
 \end{frame}
 
 \begin{frame}{Agenda}
-  	\tableofcontents
+  \tableofcontents
   % You might wish to add the option [pausesections]
 \end{frame}
 \begin{frame}[fragile]
 
 \frametitle{Banco de Dados - Conceito}
 \section{Banco de Dados}
+
 %\subsection{Conceito}
 \begin{block}{\LARGE Conceito}
 	\begin{itemize}
@@ -72,8 +73,7 @@
 %  \end{minted}
 \end{frame}
 
-\subsection{First Subsection}
-
+\section{Exemplos}
 \begin{frame}[fragile]{Banco de Dados}{Exemplos}
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
@@ -100,7 +100,7 @@
 	\end{columns}		
 \end{frame}
 
-
+\section{Ferramenta - SQLiteman}
 \begin{frame}[fragile]{Ferramenta}{SQLiteman - Ferramenta gráfica para gerenciar o Banco}
 	\begin{figure}
 		\begin{minipage}{\columnwidth}
@@ -139,6 +139,7 @@
 	\end{itemize}
 \end{frame}
 
+\section{Tabelas}
 \begin{frame}{SQLite}{Tabela}
 	\begin{itemize} 
 		\item{
@@ -226,28 +227,28 @@
 
 \begin{frame}{Cardinalidade}{1 e 1}
 	\begin{center}
-		\begin{table}
-			\Large
-			\caption{\label{label}\Large Pessoas.}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}\Large Pessoas.}
 			\begin{tabular}{ c | l | c}
 				\hline
 				\hline
 				\hline					
 				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} \\
 				\hline
-				1 & Rodrigo Andrade Leal & 01/09/1994 \\
+				1 & Rodrigo Andrade Camarão & 01/09/1994 \\
 				\hline
 				2 & Felipe Almeida Zamora & 05/10/1990 \\
 				\hline
 				\hline
 			\end{tabular}% Tabulação
-		\end{table}
+%		\end{table}
 	\end{center}
 		
 	\begin{center}
-		\begin{table}
-			\Large
-			\caption{\label{label}\Large Documentos.}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}\Large Documentos.}
 			\begin{tabular}{ l | l | l | l }
 				\hline
 				\hline
@@ -260,35 +261,35 @@
 				\hline
 				\hline
 			\end{tabular}% Tabulação
-		\end{table}				
+%		\end{table}				
 	\end{center}
 
 \end{frame}
 
 \begin{frame}{Cardinalidade}{1 e 1}
 	\begin{center}
-		\begin{table}
-			\Large
-			\caption{\label{label}\Large Pessoas.}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}Pessoas.}
 			\begin{tabular}{ l | l | l | l}
 				\hline
 				\hline
 				\hline					
 				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} & \cellcolor{gray}\textbf{DOC-ID} \\
 				\hline
-				1 & Rodrigo Andrade Leal & 01/09/1994 & 56\\
+				1 & Rodrigo Andrade Camarão & 01/09/1994 & 56\\
 				\hline
 				2 & Felipe Almeida Zamora & 05/10/1990 & 55\\
 				\hline
 				\hline
 			\end{tabular}% Tabulação
-		\end{table}
+%		\end{table}
 	\end{center}
 		
 	\begin{center}
-		\begin{table}
-			\Large
-			\caption{\label{label}\Large Documentos.}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}\large Documentos.}
 			\begin{tabular}{ l | l | l }
 				\hline
 				\hline
@@ -301,10 +302,358 @@
 				\hline
 				\hline
 			\end{tabular}% Tabulação
-		\end{table}				
+%		\end{table}				
 	\end{center}
-
 \end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}
+	\begin{center}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}Pessoas.}
+			\begin{tabular}{ l | l | l }
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} \\
+				\hline
+				1 & Rodrigo Andrade Camarão & 01/09/1994\\
+				\hline
+				2 & Felipe Almeida Zamora & 05/10/1990\\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+%		\end{table}
+	\end{center}
+		
+	\begin{center}
+%		\begin{table}
+%			\Large
+%			\caption{\label{label}\large Documentos.}
+			\begin{tabular}{ l | l | l | l}
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF}  & \cellcolor{gray}\textbf{PES-ID} \\
+				\hline
+				55 & 55997-65  & 555.999.777 & 2\\  
+				\hline
+				56 &  56587-65 & 544.455.545 & 1\\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+%		\end{table}				
+	\end{center}
+\end{frame}
+\section{Relacionamentos}
+\begin{frame}{Relacionamentos 1xN}
+	\begin{block} {\LARGE 1xN}
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE Uma entidade(Tabela) se relaciona com outra de maneira desigual.}
+			\item{\LARGE 1 registro está relacionado a N outros registros.}
+			\item{\LARGE Chave estrangeira sempre do lado N}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Relacionamento - 1xN}
+	\begin{center}
+		\begin{table}
+%			\LARGE
+%			\caption{\label{label}\Large Time.}
+			\begin{tabular}{ l | l | l}
+					\hline
+					\hline
+					\hline					
+					\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{TIME}  & \cellcolor{gray}\textbf{SIGLA} \\
+					\hline
+					10 & Flamengo & CRF \\
+					\hline
+					11 & Fluminense & FFC \\
+					\hline
+					\hline
+			\end{tabular}% Tabulação
+		\end{table}
+		\begin{table}
+			\begin{tabular}{ l | l | l | l}
+				\hline
+				\hline
+				\hline					
+				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{IDADE}  & \cellcolor{gray}\textbf{TIME\_ID}\\
+				\hline
+				20 & José & 25 & 10 \\
+				\hline
+				21 & Mendonça & 31 & 10 \\
+				\hline
+				22 & Daniel & 26 & 11 \\
+				\hline
+				23 & Victor & 28 & 11 \\
+				\hline
+				\hline
+			\end{tabular}% Tabulação
+		\end{table}
+		
+	\end{center}
+\end{frame}
+
+\begin{frame}{Relacionamentos NxN}
+	\begin{block} {\LARGE NxN}
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE N Registros de uma tabela possuem N de outra tabela.}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Banco de Dados}{Exemplos}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			
+			\begin{center}
+%				\begin{table}
+%					\Large
+%					\caption{\label{label}Pessoas.}
+					\begin{tabular}{ l | l }
+						\hline
+						\hline
+						\hline					
+						\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME} \\
+						\hline
+						15 & Rodrigo Andrade Camarão\\
+						\hline
+						16 & Felipe Almeida Zamora\\
+						\hline
+						17 & Andre Luiz de Souza\\
+						\hline
+						\hline
+					\end{tabular}% Tabulação
+%				\end{table}
+				
+%				\begin{table}
+%					\Large
+%					\caption{\label{label}Turma.}
+					\begin{tabular}{ l | l }
+						\hline
+						\hline
+						\hline					
+						\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{TURMA} \\
+						\hline
+						30 & CC1TA\\
+						\hline
+						31 & BSINA\\
+						\hline
+						32 & BECTA\\
+						\hline
+						\hline
+					\end{tabular}% Tabulação
+%				\end{table}
+				
+			\end{center}
+			
+		\end{column}
+	
+		\begin{column}{0.5\textwidth}
+			\begin{center}
+%				\begin{table}
+%					\Large
+%					\caption{\label{label}Turma.}
+					\begin{tabular}{ l | l }
+						\hline
+						\hline
+						\hline					
+						\cellcolor{gray} \textbf{ID\_PROF} & \cellcolor{gray} \textbf{ID\_TURMA} \\
+						\hline
+						15 & 30\\
+						\hline
+						15 & 31\\
+						\hline
+						16 & 31\\
+						\hline
+						17 & 30\\
+						\hline
+						17 & 31\\
+						\hline
+						17 & 32\\						
+						\hline
+						\hline
+					\end{tabular}% Tabulação
+%				\end{table}
+			\end{center}		
+		\end{column}
+	\end{columns}		
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Prática e SQL}
+	\begin{block} {\LARGE Prática}
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE Demonstração desses Conceitos usando o sqliteman.}
+			\item{\LARGE Linguagem SQL(Structure Query Language)}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Modelos MVC}
+	\begin{block} {\LARGE Modelo}
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE Biblioteca - ActiveRecord::Base}
+			\item{\LARGE Estrutura - Convenções}
+			\item{\LARGE Funcionamento - ORM}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Modelos MVC}{Criando uma Pessoa}
+	\begin{block} {\LARGE Model}
+		\begin{itemize}
+			\item{\LARGE Novo Model - Pessoa}
+			\begin{minted}{irb}
+			  $ rails g model pessoa
+			\end{minted}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Rails Console}{CRUD}
+	\begin{block} {\LARGE CRUD}
+		\begin{itemize}
+			\item{\LARGE CREATE}
+			\item{\LARGE READ}
+			\item{\LARGE UPDATE}
+			\item{\LARGE DELETE}				
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Relacionamentos}{Rails Console}
+	\begin{block} {\LARGE CRUD}
+		\begin{itemize}
+			\item{\LARGE has\_one - pessoa e documento}
+			\item{\LARGE has\_many - Jogador e Time de Futebol}
+			\item{\LARGE belongs\_to}
+			\item{\LARGE has\_and\_belongs\_to\_many - Professores e Turmas}				
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}{Projeto Relacionamentos}
+	\begin{block} {1x1}
+		\begin{minted}{irb}
+		  	$ rails new one_one
+		  	$ rails g model Person name age:integer
+		  	$ rails g model Document rg cpf
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+	\begin{block} {\LARGE has\_one e belongs\_to}
+		\begin{minted}{rb}
+		  	class Person < ActiveRecord::Base
+		  	   has_one :document
+		  	end
+		  	
+		  	class Document < ActiveRecord::Base
+		  	   belongs_to :person
+		  	end
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Não Se Esqueça da Migration}{Rails Console}
+	\begin{block} {
+	}
+		\begin{minted}{irb}
+		  	$ rake db:migrate
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}{Projeto Relacionamentos}
+	\begin{block} {1xn}
+		\begin{minted}{irb}
+		  	$ rails new has_many_belongs_to
+		  	$ rails g model Team name 
+		  	$ rails g model Player name age:integer
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+	\begin{block} {\LARGE has\_many e belongs\_to}
+		\begin{minted}{rb}
+		  	class Team < ActiveRecord::Base
+		  	   has_many :players
+		  	end
+		  	
+		  	class Player < ActiveRecord::Base
+		  	   belongs_to :team
+		  	end
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Não Se Esqueça da Migration}{Rails Console}
+	\begin{block} {1x1}
+		\begin{minted}{irb}
+		  	$ rake db:migrate
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+	\begin{block} {\LARGE has\_and\_belongs\_to\_many}
+		\begin{minted}{rb}
+		  	class Classroom < ActiveRecord::Base
+		  	    has_and_belongs_to_many :teachers
+		  	end
+		  	
+		  	class Teacher < ActiveRecord::Base
+		  	    has_and_belongs_to_many :classrooms
+		  	end
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}{Nova Tabela precisa ser criada}
+	\begin{block} {1xn}
+		\begin{minted}{irb}
+		  	$ rails g migration create_classrooms_teachers
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+	\begin{block} {\LARGE Nova Migration Essencial}
+		\begin{minted}{rb}
+		    def change
+		        create_table :classrooms_teachers do |t|
+		            t.integer :teacher_id
+		            t.integer :classroom_id			
+		        end
+		    end
+		\end{minted}
+	\end{block}
+\end{frame}
+
 
 \begin{frame}[allowframebreaks]
   \frametitle<presentation>{For Further Reading}

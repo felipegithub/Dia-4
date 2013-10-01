@@ -1,8 +1,11 @@
-\frametitle {SQLite 3}\framesubtitle {Default Rails}
-\begin{itemize}  \itemsep 2em
-\item{ \LARGE Banco de Dados Simples.}
-\item{ \LARGE Apenas para Estudo.}
-\item{ \LARGE Não deve ser usado em projetos robustos.}
-\item{ \LARGE Banco de dados localizado em um unico arquivo.}
-
-\end{itemize}
+\frametitle {Relacionamentos}\framesubtitle {Rails Console}
+\begin{block} {\LARGE Nova Migration Essencial}
+\begin{minted}{rb}
+    def change
+        create_table :classrooms_teachers do |t|
+            t.integer :teacher_id
+            t.integer :classroom_id
+        end
+    end
+\end{minted}
+\end{block}
