@@ -16,6 +16,7 @@
 Relacionamentos.synctex.gz
 *.toc
 *.vrb
+*.pdf
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
