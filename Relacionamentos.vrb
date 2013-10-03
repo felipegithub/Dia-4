@@ -1,5 +1,0 @@
-\frametitle {Rails Console}\begin {block} {\LARGE Testando os Modelos no Rails Cosole}
-\begin{minted}{irb}
-$ rails c
-\end{minted}
-\end{block}
