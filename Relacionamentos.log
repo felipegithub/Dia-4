@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  3 OCT 2013 10:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  3 OCT 2013 10:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1440,9 +1440,27 @@ runsystem(rm Relacionamentos.pyg)...executed.
 
 ] [29
 
-] [30
+]
+\openout4 = `Relacionamentos.vrb'.
 
-] [31
+ (./Relacionamentos.vrb) [30
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+
+(./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+ (./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [31
 
 ]
 \openout4 = `Relacionamentos.vrb'.
@@ -1450,9 +1468,8 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
 
 (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
@@ -1467,11 +1484,21 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
-" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
 (./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+ (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
@@ -1481,48 +1508,33 @@ runsystem(rm Relacionamentos.pyg)...executed.
 ]
 \openout4 = `Relacionamentos.vrb'.
 
- (./Relacionamentos.vrb
+
+(./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
-
-(./Relacionamentos.out.pyg)
+ (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
 
 ) [34
 
+] [35
+
 ]
 \openout4 = `Relacionamentos.vrb'.
 
- (./Relacionamentos.vrb
+
+(./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
 runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
-
-(./Relacionamentos.out.pyg)
-runsystem(rm Relacionamentos.out.pyg)...executed.
-
-runsystem(rm Relacionamentos.pyg)...executed.
-
-) [35
-
-]
-\openout4 = `Relacionamentos.vrb'.
-
- (./Relacionamentos.vrb
-\openout5 = `Relacionamentos.pyg'.
-
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
- " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
-
-(./Relacionamentos.out.pyg)
+ (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
@@ -1537,7 +1549,6 @@ runsystem(rm Relacionamentos.pyg)...executed.
 
 runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
 " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
 
 (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
@@ -1637,8 +1648,8 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
-" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
 (./Relacionamentos.out.pyg)
@@ -1666,6 +1677,74 @@ runsystem(rm Relacionamentos.pyg)...executed.
 ) [44
 
 ]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
+" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [45
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [46
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
+" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [47
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [48
+
+]
 \tf@nav=\write8
 \openout8 = `Relacionamentos.nav'.
 
@@ -1675,11 +1754,11 @@ runsystem(rm Relacionamentos.pyg)...executed.
 \tf@snm=\write10
 \openout10 = `Relacionamentos.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 870.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 870.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 923.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 923.
  (./Relacionamentos.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 870.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 870.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 923.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 923.
 Package rerunfilecheck Info: File `Relacionamentos.out' has not changed.
 (rerunfilecheck)             Checksum: 8B97CB99243D0E79F4343FF336599CD8;451.
 
@@ -1690,13 +1769,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 870.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 923.
  ) 
 Here is how much of TeX's memory you used:
- 17342 strings out of 495059
- 315173 string characters out of 3182030
+ 17379 strings out of 495059
+ 315769 string characters out of 3182030
  401664 words of memory out of 3000000
- 19868 multiletter control sequences out of 15000+200000
+ 19877 multiletter control sequences out of 15000+200000
  16381 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,17n,60p,404b,719s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1708,10 +1787,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Relacionamentos.pdf (44 pages, 334245 bytes).
+Output written on Relacionamentos.pdf (48 pages, 343150 bytes).
 PDF statistics:
- 1348 PDF objects out of 1440 (max. 8388607)
- 1263 compressed objects within 13 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 1460 PDF objects out of 1728 (max. 8388607)
+ 1370 compressed objects within 14 object streams
+ 109 named destinations out of 1000 (max. 500000)
  172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
