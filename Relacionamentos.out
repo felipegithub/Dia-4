@@ -2,5 +2,8 @@
 \BOOKMARK [2][]{Outline0.2}{Exemplos}{}% 2
 \BOOKMARK [2][]{Outline0.3}{Ferramenta - SQLiteman}{}% 3
 \BOOKMARK [2][]{Outline0.4}{Tabelas}{}% 4
-\BOOKMARK [1][]{Outline1}{Ap\352ndice}{}% 5
-\BOOKMARK [2][]{Outline1.6}{Relacionamentos}{Outline1}% 6
+\BOOKMARK [2][]{Outline0.6}{Cardinalidade}{}% 5
+\BOOKMARK [2][]{Outline0.7}{Relacionamentos}{}% 6
+\BOOKMARK [2][]{Outline0.8}{has\137one}{}% 7
+\BOOKMARK [2][]{Outline0.9}{has\137many}{}% 8
+\BOOKMARK [2][]{Outline0.10}{has\137and\137belongs\137to\137many}{}% 9

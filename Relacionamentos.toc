@@ -4,4 +4,8 @@
 \beamer@sectionintoc {2}{Exemplos}{4}{0}{2}
 \beamer@sectionintoc {3}{Ferramenta - SQLiteman}{5}{0}{3}
 \beamer@sectionintoc {4}{Tabelas}{8}{0}{4}
-\beamer@sectionintoc {6}{Relacionamentos}{16}{1}{5}
+\beamer@sectionintoc {6}{Cardinalidade}{12}{0}{5}
+\beamer@sectionintoc {7}{Relacionamentos}{15}{0}{6}
+\beamer@sectionintoc {8}{has\_one}{33}{0}{7}
+\beamer@sectionintoc {9}{has\_many}{36}{0}{8}
+\beamer@sectionintoc {10}{has\_and\_belongs\_to\_many}{40}{0}{9}

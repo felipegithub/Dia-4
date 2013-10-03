@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  1 OCT 2013 08:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.11)  2 OCT 2013 11:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -982,27 +982,31 @@ Package: beamerouterthemeinfolines 2010/07/10  (rcs-revision 445340293dde)
 )
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemebeaver.sty
 Package: beamercolorthemebeaver 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (./Relacionamentos.aux
+))
+(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemestructure.
+sty
+Package: beamercolorthemestructure 2010/06/17  (rcs-revision d02a7cf4d8ae)
+) (./Relacionamentos.aux
 
 LaTeX Warning: Label `label' multiply defined.
 
 )
 \openout1 = `Relacionamentos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1068,7 +1072,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 42.
+Package hyperref Info: Link coloring OFF on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1078,56 +1082,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (./Relacionamentos.out) (./Relacionamentos.out)
 \@outlinefile=\write7
 \openout7 = `Relacionamentos.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 51.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 51.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 51.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 42.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 51.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 51.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 51.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 51.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1159,7 +1163,7 @@ runsystem(pygmentize -S default -f latex > Relacionamentos.pyg)...executed.
 (./Relacionamentos.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 48.
+(Font)              size <5> substituted on input line 57.
 
 [1
 
@@ -1176,7 +1180,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \openout4 = `Relacionamentos.vrb'.
 
  (./Relacionamentos.vrb
-<images/pg.jpeg, id=148, 252.945pt x 200.75pt>
+<images/pg.jpeg, id=162, 252.945pt x 200.75pt>
 File: images/pg.jpeg Graphic file (type jpg)
  <use images/pg.jpeg>
 Package pdftex.def Info: images/pg.jpeg used on input line 6.
@@ -1191,19 +1195,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<images/mysql.jpg, id=149, 96.1191pt x 70.1019pt>
+<images/mysql.jpg, id=163, 96.1191pt x 70.1019pt>
 File: images/mysql.jpg Graphic file (type jpg)
  <use images/mysql.jpg>
 Package pdftex.def Info: images/mysql.jpg used on input line 9.
 (pdftex.def)             Requested size: 96.11884pt x 70.10172pt.
 
-<images/oracle.jpeg, id=150, 240.9pt x 135.50626pt>
+<images/oracle.jpeg, id=164, 240.9pt x 135.50626pt>
 File: images/oracle.jpeg Graphic file (type jpg)
  <use images/oracle.jpeg>
 Package pdftex.def Info: images/oracle.jpeg used on input line 17.
 (pdftex.def)             Requested size: 168.62883pt x 94.85371pt.
 
-<images/sqlite.jpeg, id=151, 306.14375pt x 144.54pt>
+<images/sqlite.jpeg, id=165, 306.14375pt x 144.54pt>
 File: images/sqlite.jpeg Graphic file (type jpg)
  <use images/sqlite.jpeg>
 Package pdftex.def Info: images/sqlite.jpeg used on input line 20.
@@ -1216,7 +1220,7 @@ e.jpeg>]
 \openout4 = `Relacionamentos.vrb'.
 
  (./Relacionamentos.vrb
-<images/sqliteman.png, id=181, 642.4pt x 401.5pt>
+<images/sqliteman.png, id=193, 642.4pt x 401.5pt>
 File: images/sqliteman.png Graphic file (type png)
  <use images/sqliteman.png>
 Package pdftex.def Info: images/sqliteman.png used on input line 5.
@@ -1239,7 +1243,7 @@ Package pdftex.def Info: images/sqliteman.png used on input line 5.
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 \end{frame}
+l.219 \end{frame}
                   [10
 
 ] [11
@@ -1256,17 +1260,13 @@ l.210 \end{frame}
 
 ] [17
 
-] [18
-
 ]
 \openout4 = `Relacionamentos.vrb'.
 
 
-(./Relacionamentos.vrb) [19
+(./Relacionamentos.vrb) [18
 
-] [20
-
-] [21
+] [19
 
 ]
 \openout4 = `Relacionamentos.vrb'.
@@ -1274,7 +1274,44 @@ l.210 \end{frame}
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [20
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [21
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
@@ -1285,9 +1322,22 @@ runsystem(rm Relacionamentos.pyg)...executed.
 
 ) [22
 
-] [23
+]
+\openout4 = `Relacionamentos.vrb'.
 
-] [24
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [23
 
 ]
 \openout4 = `Relacionamentos.vrb'.
@@ -1295,7 +1345,24 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [24
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
@@ -1312,14 +1379,11 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
-" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
-(./Relacionamentos.out.pyg
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
-)
+(./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
@@ -1332,7 +1396,7 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
@@ -1349,7 +1413,7 @@ runsystem(rm Relacionamentos.pyg)...executed.
  (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+runsystem(pygmentize -l sql -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
 
@@ -1360,56 +1424,11 @@ runsystem(rm Relacionamentos.pyg)...executed.
 
 ) [28
 
-]
-\openout4 = `Relacionamentos.vrb'.
+] [29
 
- (./Relacionamentos.vrb
-\openout5 = `Relacionamentos.pyg'.
+] [30
 
-runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
-" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
-
-(./Relacionamentos.out.pyg)
-runsystem(rm Relacionamentos.out.pyg)...executed.
-
-runsystem(rm Relacionamentos.pyg)...executed.
-
-) [29
-
-]
-\openout4 = `Relacionamentos.vrb'.
-
- (./Relacionamentos.vrb
-\openout5 = `Relacionamentos.pyg'.
-
-runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
- " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
-
-(./Relacionamentos.out.pyg)
-runsystem(rm Relacionamentos.out.pyg)...executed.
-
-runsystem(rm Relacionamentos.pyg)...executed.
-
-) [30
-
-]
-\openout4 = `Relacionamentos.vrb'.
-
- (./Relacionamentos.vrb
-\openout5 = `Relacionamentos.pyg'.
-
-runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
-" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
-
-
-(./Relacionamentos.out.pyg)
-runsystem(rm Relacionamentos.out.pyg)...executed.
-
-runsystem(rm Relacionamentos.pyg)...executed.
-
-) [31
+] [31
 
 ]
 \openout4 = `Relacionamentos.vrb'.
@@ -1445,10 +1464,194 @@ runsystem(rm Relacionamentos.pyg)...executed.
 
 ) [33
 
-] [34
+]
+\openout4 = `Relacionamentos.vrb'.
 
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonbook.pdf> </usr/share/te
-xmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [34
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [35
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [36
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
+" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [37
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [38
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [39
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [40
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
+" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [41
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [42
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l rb -f latex -F tokenmerge             -P "verboptions= 
+" -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [43
+
+]
+\openout4 = `Relacionamentos.vrb'.
+
+ (./Relacionamentos.vrb
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l irb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+
+(./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
+) [44
+
+]
 \tf@nav=\write8
 \openout8 = `Relacionamentos.nav'.
 
@@ -1458,13 +1661,13 @@ xmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@snm=\write10
 \openout10 = `Relacionamentos.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 820.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 820.
  (./Relacionamentos.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 683.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 820.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 820.
 Package rerunfilecheck Info: File `Relacionamentos.out' has not changed.
-(rerunfilecheck)             Checksum: 7A64EAE357358DE9F8159B93DBFB6FDA;293.
+(rerunfilecheck)             Checksum: 8B97CB99243D0E79F4343FF336599CD8;451.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1473,28 +1676,28 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 683.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 820.
  ) 
 Here is how much of TeX's memory you used:
- 17282 strings out of 495059
- 315363 string characters out of 3182030
- 397168 words of memory out of 3000000
- 19882 multiletter control sequences out of 15000+200000
- 16213 words of font info for 60 fonts, out of 3000000 for 9000
+ 17357 strings out of 495059
+ 315918 string characters out of 3182030
+ 402016 words of memory out of 3000000
+ 19884 multiletter control sequences out of 15000+200000
+ 16381 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,17n,60p,404b,719s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Relacionamentos.pdf (34 pages, 313685 bytes).
+Output written on Relacionamentos.pdf (44 pages, 334223 bytes).
 PDF statistics:
- 1138 PDF objects out of 1200 (max. 8388607)
- 1060 compressed objects within 11 object streams
- 80 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1348 PDF objects out of 1440 (max. 8388607)
+ 1263 compressed objects within 13 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

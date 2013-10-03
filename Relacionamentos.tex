@@ -12,10 +12,19 @@
 
 % Tabela
 \usepackage{xcolor,colortbl}
-\definecolor{gray}{rgb}{0.87,0.87,0.87}
+\definecolor{red}{RGB}{226,226,226}
+\definecolor{blue}{RGB}{174,174,174}
+\definecolor{header-color}{RGB}{50,50,50}
 
+%\usetheme{Madrid}
 \usetheme{CambridgeUS}
+\definecolor{kugreen}{RGB}{50,93,61}
+\definecolor{kugreenlys}{RGB}{132,158,139}
+\definecolor{kugreenlyslys}{RGB}{173,190,177}
+\definecolor{kugreenlyslyslys}{RGB}{214,223,216}
 
+\setbeamercovered{transparent}
+\usecolortheme[named=kugreen]{structure}
 
 \clearpage
 
@@ -165,7 +174,7 @@
 					\hline
 					\hline
 					\hline					
-					\cellcolor{gray} \textbf{CONTA}  & \cellcolor{gray}\textbf{VALOR} \\
+					\rowcolor{header-color} \color{white}\textbf{CONTA}  & \color{white}\textbf{VALOR} \\
 					\hline
 					Luz & 100.50 \\
 					\hline
@@ -182,7 +191,7 @@
 
 
 % All of the following is optional and typically not needed. 
-\appendix
+%\appendix
 \section<presentation>*{\appendixname}
 \subsection<presentation>*{For Further Reading}
 
@@ -191,11 +200,11 @@
 		\begin{table}
 			\LARGE
 			\caption{\label{label}\Large Dividas.}
-			\begin{tabular}{ c | l | c}
+			\begin{tabular}{ >{\columncolor[gray]{0.8}}c | l | c}
 					\hline
 					\hline
 					\hline					
-					\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{CONTA}  & \cellcolor{gray}\textbf{VALOR} \\
+					\rowcolor{header-color} \color{white}\textbf{ID} &  \color{white}\textbf{CONTA}  & \color{white}\textbf{VALOR} \\
 					\hline
 					1 & Luz & 100.50 \\
 					\hline
@@ -217,6 +226,8 @@
 	\end{block}
 \end{frame}
 
+\section{Cardinalidade}
+
 \begin{frame}{Relacionamentos}{Tipos}
 	\begin{itemize} \itemsep 2em
 		\item{ \LARGE 1 x 1 }
@@ -234,9 +245,9 @@
 				\hline
 				\hline
 				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} \\
+				\rowcolor{header-color} \color{white}\textbf{ID} &  \color{white}\textbf{NOME}  & \color{white}\textbf{NASCIMENTO} \\
 				\hline
-				1 & Rodrigo Andrade Camarão & 01/09/1994 \\
+				1 & Rodrigo Andrade Silva & 01/09/1994 \\
 				\hline
 				2 & Felipe Almeida Zamora & 05/10/1990 \\
 				\hline
@@ -249,11 +260,11 @@
 %		\begin{table}
 %			\Large
 %			\caption{\label{label}\Large Documentos.}
-			\begin{tabular}{ l | l | l | l }
+			\begin{tabular}{ l | l | l | >{\columncolor[gray]{0.8}}l }
 				\hline
 				\hline
 				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF} & \cellcolor{gray}\textbf{PES-ID} \\
+				\rowcolor{header-color} \color{white}\textbf{ID} &  \color{white}\textbf{IDENTIDADE}  & \color{white}\textbf{CPF} &  \color{white}\textbf{PES-ID} \\
 				\hline
 				55 & 55997-65  & 555.999.777 & 2\\ 
 				\hline
@@ -271,13 +282,13 @@
 %		\begin{table}
 %			\Large
 %			\caption{\label{label}Pessoas.}
-			\begin{tabular}{ l | l | l | l}
+			\begin{tabular}{ l | l | l |  >{\columncolor[gray]{0.8}}l}
 				\hline
 				\hline
 				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} & \cellcolor{gray}\textbf{DOC-ID} \\
+				\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{NOME}  & \color{white}\textbf{NASCIMENTO} & \color{white}\textbf{DOC-ID} \\
 				\hline
-				1 & Rodrigo Andrade Camarão & 01/09/1994 & 56\\
+				1 & Rodrigo Andrade Silva & 01/09/1994 & 56\\
 				\hline
 				2 & Felipe Almeida Zamora & 05/10/1990 & 55\\
 				\hline
@@ -294,7 +305,7 @@
 				\hline
 				\hline
 				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF} \\
+				\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{IDENTIDADE}  & \color{white}\textbf{CPF} \\
 				\hline
 				55 & 55997-65  & 555.999.777\\ 
 				\hline
@@ -313,45 +324,7 @@
 
 
 
-\begin{frame}
-	\begin{center}
-%		\begin{table}
-%			\Large
-%			\caption{\label{label}Pessoas.}
-			\begin{tabular}{ l | l | l }
-				\hline
-				\hline
-				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{NASCIMENTO} \\
-				\hline
-				1 & Rodrigo Andrade Camarão & 01/09/1994\\
-				\hline
-				2 & Felipe Almeida Zamora & 05/10/1990\\
-				\hline
-				\hline
-			\end{tabular}% Tabulação
-%		\end{table}
-	\end{center}
-		
-	\begin{center}
-%		\begin{table}
-%			\Large
-%			\caption{\label{label}\large Documentos.}
-			\begin{tabular}{ l | l | l | l}
-				\hline
-				\hline
-				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{IDENTIDADE}  & \cellcolor{gray}\textbf{CPF}  & \cellcolor{gray}\textbf{PES-ID} \\
-				\hline
-				55 & 55997-65  & 555.999.777 & 2\\  
-				\hline
-				56 &  56587-65 & 544.455.545 & 1\\
-				\hline
-				\hline
-			\end{tabular}% Tabulação
-%		\end{table}				
-	\end{center}
-\end{frame}
+
 \section{Relacionamentos}
 \begin{frame}{Relacionamentos 1xN}
 	\begin{block} {\LARGE 1xN}
@@ -372,11 +345,11 @@
 					\hline
 					\hline
 					\hline					
-					\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{TIME}  & \cellcolor{gray}\textbf{SIGLA} \\
+					\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{TIME}  & \color{white}\textbf{SIGLA} \\
 					\hline
-					10 & Flamengo & CRF \\
+					\rowcolor{red} 10 & Flamengo & CRF \\
 					\hline
-					11 & Fluminense & FFC \\
+					\rowcolor{blue} 11 & Fluminense & FFC \\
 					\hline
 					\hline
 			\end{tabular}% Tabulação
@@ -386,15 +359,15 @@
 				\hline
 				\hline
 				\hline					
-				\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME}  & \cellcolor{gray}\textbf{IDADE}  & \cellcolor{gray}\textbf{TIME\_ID}\\
+				\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{NOME}  & \color{white}\textbf{IDADE}  & \color{white}\textbf{TIME\_ID}\\
 				\hline
-				20 & José & 25 & 10 \\
+				\rowcolor{red} 20  & José & 25 & 10 \\
 				\hline
-				21 & Mendonça & 31 & 10 \\
+				\rowcolor{red}  21  & Mendonça & 31 & 10 \\
 				\hline
-				22 & Daniel & 26 & 11 \\
+				\rowcolor{blue} 22 & Daniel & 26 & 11 \\
 				\hline
-				23 & Victor & 28 & 11 \\
+				\rowcolor{blue} 23 & Victor & 28 & 11 \\
 				\hline
 				\hline
 			\end{tabular}% Tabulação
@@ -423,9 +396,9 @@
 						\hline
 						\hline
 						\hline					
-						\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{NOME} \\
+						\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{NOME} \\
 						\hline
-						15 & Rodrigo Andrade Camarão\\
+						15 & Rodrigo Andrade Silva\\
 						\hline
 						16 & Felipe Almeida Zamora\\
 						\hline
@@ -442,7 +415,7 @@
 						\hline
 						\hline
 						\hline					
-						\cellcolor{gray} \textbf{ID} & \cellcolor{gray} \textbf{TURMA} \\
+						\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{TURMA} \\
 						\hline
 						30 & CC1TA\\
 						\hline
@@ -467,7 +440,7 @@
 						\hline
 						\hline
 						\hline					
-						\cellcolor{gray} \textbf{ID\_PROF} & \cellcolor{gray} \textbf{ID\_TURMA} \\
+						\rowcolor{header-color} \color{white}\textbf{ID\_PROF} & \color{white}\textbf{ID\_TURMA} \\
 						\hline
 						15 & 30\\
 						\hline
@@ -511,6 +484,133 @@
 	\end{block}
 \end{frame}
 
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando Tabelas}
+		\begin{minted}{sql}
+		    CREATE TABLE Dividas(id INT PRIMARY KEY,
+		                         conta VARCHAR(20),
+		                         valor DECIMAL
+		    );
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Crie a Tabela Pessoas}
+		\begin{itemize}
+			\item Coluna id - INT -Chave Primária
+			\item Coluna nome - VARCHAR
+			\item Coluna nascimento - DATE
+		\end{itemize}
+	\end{block}
+	\begin{block}{Cuidado}
+		Comente ou delete as linhas de criação da tabela anterior para que a ferramenta não tente criar novamente a tabela Dividas: (Comentários em SQL são representados por '- -')
+		\begin{minted}{sql}
+		    -- CREATE TABLE dividas(id INT PRIMARY KEY, 
+		    --                      conta VARCHAR(20),
+		    --                      valor DECIMAL
+		    -- );
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando Tabelas}
+		\begin{minted}{sql}
+		    CREATE TABLE Pessoas(id INT PRIMARY KEY, 
+		    		                     nome VARCHAR, 
+		    		                     nascimento DATE
+		    );
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Inserindo Dados na Tabela}
+		\begin{minted}{sql}
+		    INSERT INTO dividas VALUES (1,'LUZ', 100.52);
+		\end{minted}
+	\end{block}
+\end{frame}
+
+
+%\begin{frame}
+%	\begin{block} {SQL - Criando Tabelas}
+%		\begin{minted}{sql}
+%			
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando a Tabela Intermediaria - professores\_turmas}
+		\begin{minted}{sql}
+		CREATE TABLE professores_turmas(
+		       id_professor INT, 
+		       id_turma INT, 
+		       FOREIGN KEY(id_professor) REFERENCES professores(id), 
+		       FOREIGN KEY(id_turma) REFERENCES turmas(id)
+		);
+		
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando a Chave Estrangeira - Documentos}
+		\begin{minted}{sql}
+		CREATE TABLE Documentos(
+		       id INT PRIMARY KEY, 
+		       identidade VARCHAR, 
+		       cpf VARCHAR,  
+		       pessoa_id INT,
+		
+		       FOREIGN KEY(pessoa_id) REFERENCES Pessoas(id)
+		);
+		\end{minted}
+	\end{block}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando a Chave Estrangeira - Documentos}
+		\begin{minted}{sql}
+		CREATE TABLE Professores(id INT PRIMARY KEY, nome VARCHAR);
+		CREATE TABLE Turmas(id INT PRIMARY KEY, nome_turma);
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando a Tabela Intermediaria - professores\_turmas}
+		\begin{minted}{sql}
+		CREATE TABLE professores_turmas(
+		       id_professor INT, 
+		       id_turma INT, 
+		       ... ,
+		       ...
+		);
+		
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Criando a Tabela Intermediaria - professores\_turmas}
+		\begin{minted}{sql}
+		CREATE TABLE professores_turmas(
+		       id_professor INT, 
+		       id_turma INT, 
+		       FOREIGN KEY(id_professor) REFERENCES professores(id), 
+		       FOREIGN KEY(id_turma) REFERENCES turmas(id)
+		);
+		
+		\end{minted}
+	\end{block}
+\end{frame}
+
+%\section{Rails e Relacionamentos}
 \begin{frame}{Modelos MVC}
 	\begin{block} {\LARGE Modelo}
 		\begin{itemize} \itemsep 2em
@@ -521,20 +621,20 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Modelos MVC}{Criando uma Pessoa}
-	\begin{block} {\LARGE Model}
-		\begin{itemize}
-			\item{\LARGE Novo Model - Pessoa}
-			\begin{minted}{irb}
-			  $ rails g model pessoa
-			\end{minted}
-		\end{itemize}
-	\end{block}
-\end{frame}
+%\begin{frame}[fragile]{Modelos MVC}{Criando uma Pessoa}
+%	\begin{block} {\LARGE Model}
+%		\begin{itemize}
+%			\item{\LARGE Novo Model - Pessoa}
+%			\begin{minted}{irb}
+%			  $ rails g model pessoa
+%			\end{minted}
+%		\end{itemize}
+%	\end{block}
+%\end{frame}
 
-\begin{frame}{Rails Console}{CRUD}
+\begin{frame}{CRUD}
 	\begin{block} {\LARGE CRUD}
-		\begin{itemize}
+		\begin{itemize} \itemsep 2em
 			\item{\LARGE CREATE}
 			\item{\LARGE READ}
 			\item{\LARGE UPDATE}
@@ -543,10 +643,10 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}{Relacionamentos}{Rails Console}
+\begin{frame}{Relacionamentos}
 	\begin{block} {\LARGE CRUD}
-		\begin{itemize}
-			\item{\LARGE has\_one - pessoa e documento}
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE has\_one - Pessoa e Documento}
 			\item{\LARGE has\_many - Jogador e Time de Futebol}
 			\item{\LARGE belongs\_to}
 			\item{\LARGE has\_and\_belongs\_to\_many - Professores e Turmas}				
@@ -554,7 +654,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Rails Console}{Projeto Relacionamentos}
+\begin{frame}[fragile]{Projeto Relacionamentos}
 	\begin{block} {1x1}
 		\begin{minted}{irb}
 		  	$ rails new one_one
@@ -563,22 +663,22 @@
 		\end{minted}
 	\end{block}
 \end{frame}
-
-\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+\section{has\_one}
+\begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE has\_one e belongs\_to}
 		\begin{minted}{rb}
 		  	class Person < ActiveRecord::Base
-		  	   has_one :document
+		  	    has_one :document
 		  	end
 		  	
 		  	class Document < ActiveRecord::Base
-		  	   belongs_to :person
+		  	    belongs_to :person
 		  	end
 		\end{minted}
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Não Se Esqueça da Migration}{Rails Console}
+\begin{frame}[fragile]{Não Se Esqueça da Migration}
 	\begin{block} {
 	}
 		\begin{minted}{irb}
@@ -587,17 +687,27 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Rails Console}{Projeto Relacionamentos}
+\begin{frame}[fragile]{Rails Console}
+	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
+		\begin{minted}{irb}
+			$ rails c
+		\end{minted}
+	\end{block}
+\end{frame}
+
+
+\section{has\_many}
+\begin{frame}[fragile]{Projeto Relacionamentos}
 	\begin{block} {1xn}
 		\begin{minted}{irb}
-		  	$ rails new has_many_belongs_to
+		  	$ rails new one_many
 		  	$ rails g model Team name 
 		  	$ rails g model Player name age:integer
 		\end{minted}
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+\begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE has\_many e belongs\_to}
 		\begin{minted}{rb}
 		  	class Team < ActiveRecord::Base
@@ -611,7 +721,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Não Se Esqueça da Migration}{Rails Console}
+\begin{frame}[fragile]{Não Se Esqueça da Migration}
 	\begin{block} {1x1}
 		\begin{minted}{irb}
 		  	$ rake db:migrate
@@ -619,7 +729,27 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+\begin{frame}[fragile]{Rails Console}
+	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
+		\begin{minted}{irb}
+			$ rails c
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\section{has\_and\_belongs\_to\_many}
+
+\begin{frame}[fragile]{Projeto Relacionamentos}
+	\begin{block} {1xn}
+		\begin{minted}{irb}
+		  	$ rails new many_many
+		  	$ rails g model Classroom name 
+		  	$ rails g model Teacher name
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE has\_and\_belongs\_to\_many}
 		\begin{minted}{rb}
 		  	class Classroom < ActiveRecord::Base
@@ -641,7 +771,7 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Relacionamentos}{Rails Console}
+\begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE Nova Migration Essencial}
 		\begin{minted}{rb}
 		    def change
@@ -654,31 +784,38 @@
 	\end{block}
 \end{frame}
 
-
-\begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
+\begin{frame}[fragile]{Rails Console}
+	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
+		\begin{minted}{irb}
+			$ rails c
+		\end{minted}
+	\end{block}
 \end{frame}
+
+%\begin{frame}[allowframebreaks]
+%  \frametitle<presentation>{For Further Reading}
+%    
+%  \begin{thebibliography}{10}
+%    
+%  \beamertemplatebookbibitems
+%  % Start with overview books.
+%
+%  \bibitem{Author1990}
+%    A.~Author.
+%    \newblock {\em Handbook of Everything}.
+%    \newblock Some Press, 1990.
+% 
+%    
+%  \beamertemplatearticlebibitems
+%  % Followed by interesting articles. Keep the list short. 
+%
+%  \bibitem{Someone2000}
+%    S.~Someone.
+%    \newblock On this and that.
+%    \newblock {\em Journal of This and That}, 2(1):50--100,
+%    2000.
+%  \end{thebibliography}
+%\end{frame}
 
 \end{document}
 

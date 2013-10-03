@@ -1,11 +1,5 @@
-\frametitle {Relacionamentos}\framesubtitle {Rails Console}
-\begin{block} {\LARGE Nova Migration Essencial}
-\begin{minted}{rb}
-    def change
-        create_table :classrooms_teachers do |t|
-            t.integer :teacher_id
-            t.integer :classroom_id
-        end
-    end
+\frametitle {Rails Console}\begin {block} {\LARGE Testando os Modelos no Rails Cosole}
+\begin{minted}{irb}
+$ rails c
 \end{minted}
 \end{block}
