@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.13)  3 OCT 2013 10:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.13)  3 OCT 2013 10:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1446,6 +1446,16 @@ runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
 
+\openout5 = `Relacionamentos.pyg'.
+
+runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
+ " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
+
+ (./Relacionamentos.out.pyg)
+runsystem(rm Relacionamentos.out.pyg)...executed.
+
+runsystem(rm Relacionamentos.pyg)...executed.
+
 ) [31
 
 ]
@@ -1457,7 +1467,7 @@ runsystem(rm Relacionamentos.pyg)...executed.
 runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
-(./Relacionamentos.out.pyg)
+ (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
@@ -1467,14 +1477,14 @@ runsystem(rm Relacionamentos.pyg)...executed.
 ]
 \openout4 = `Relacionamentos.vrb'.
 
- (./Relacionamentos.vrb
+
+(./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
 runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
  " -o Relacionamentos.out.pyg Relacionamentos.pyg)...executed.
 
-
-(./Relacionamentos.out.pyg)
+ (./Relacionamentos.out.pyg)
 runsystem(rm Relacionamentos.out.pyg)...executed.
 
 runsystem(rm Relacionamentos.pyg)...executed.
@@ -1494,8 +1504,7 @@ runsystem(rm Relacionamentos.pyg)...executed.
 ]
 \openout4 = `Relacionamentos.vrb'.
 
-
-(./Relacionamentos.vrb
+ (./Relacionamentos.vrb
 \openout5 = `Relacionamentos.pyg'.
 
 runsystem(pygmentize -l erb -f latex -F tokenmerge             -P "verboptions=
@@ -1740,11 +1749,11 @@ runsystem(rm Relacionamentos.pyg)...executed.
 \tf@snm=\write10
 \openout10 = `Relacionamentos.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 873.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 873.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 879.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 879.
  (./Relacionamentos.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 873.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 873.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 879.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 879.
 Package rerunfilecheck Info: File `Relacionamentos.out' has not changed.
 (rerunfilecheck)             Checksum: 8B97CB99243D0E79F4343FF336599CD8;451.
 
@@ -1755,13 +1764,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 873.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 879.
  ) 
 Here is how much of TeX's memory you used:
- 17392 strings out of 495059
- 316496 string characters out of 3182030
+ 17396 strings out of 495059
+ 316562 string characters out of 3182030
  402016 words of memory out of 3000000
- 19891 multiletter control sequences out of 15000+200000
+ 19893 multiletter control sequences out of 15000+200000
  16381 words of font info for 61 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,17n,60p,404b,719s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1773,7 +1782,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Relacionamentos.pdf (48 pages, 343298 bytes).
+Output written on Relacionamentos.pdf (48 pages, 343500 bytes).
 PDF statistics:
  1460 PDF objects out of 1728 (max. 8388607)
  1370 compressed objects within 14 object streams
