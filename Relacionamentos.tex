@@ -632,7 +632,7 @@
 %	\end{block}
 %\end{frame}
 
-\begin{frame}{CRUD}
+\begin{frame}[fragile]{CRUD}
 	\begin{block} {\LARGE CRUD}
 		\begin{itemize} \itemsep 2em
 			\item{\LARGE CREATE}
@@ -641,6 +641,59 @@
 			\item{\LARGE DELETE}				
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{CREATE}
+\begin{itemize} \itemsep 2em
+\item{\Large Instanciando um objeto da classe Pessoa.}
+\end{itemize}
+	\begin{block}{}
+			\begin{minted}{erb}			
+			$ p = Pessoa.new
+			$ p.nome = "Fulano"
+			$ p.idade = 20
+			$ p.save
+			\end{minted}
+			\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{READ }
+	\begin{block}{}
+			\begin{minted}{erb}			
+			$ p = Pessoa.all
+			$ p = Pessoa.first
+			$ p = Pessoa.last
+			$ p = Pessoa.find_by(nome: "Fulano")
+			$ p = Pessoa.find_by(idade: 20)
+			\end{minted}
+			\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{UPDATE}
+	\begin{block}{}
+			\begin{minted}{erb}			
+			$ p = Pessoa.find_by(nome: "Fulano")
+			$ p.nome = "Pedro"
+			$ p.idade = 20
+			$ p.save
+			\end{minted}
+			\end{block}
+			\centering{\LARGE{Ou}}
+			\begin{block}{}
+			\begin{minted}{erb}
+			$ p = Pessoa.find_by(nome: "Fulano")
+			$ p.update(name: "Pedro", idade: 20)
+			\end{minted}
+			\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{DELETE }
+	\begin{block}{}
+			\begin{minted}{erb}
+			$ p = Pessoa.find_by(nome: "Seu nome")
+			$ p.destroy
+			\end{minted}
+			\end{block}
 \end{frame}
 
 \begin{frame}{Relacionamentos}
