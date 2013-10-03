@@ -12,19 +12,49 @@
 
 % Tabela
 \usepackage{xcolor,colortbl}
-\definecolor{red}{RGB}{226,226,226}
-\definecolor{blue}{RGB}{174,174,174}
+
+\definecolor{fabsoft-one}{RGB}{48,26,193}
+\definecolor{fabsoft-two}{RGB}{76,49,255}
+\definecolor{fabsoft-three}{RGB}{108,85,255}
+
+\definecolor{gray-one}{RGB}{226,226,226}
+\definecolor{gray-two}{RGB}{174,174,174}
 \definecolor{header-color}{RGB}{50,50,50}
+\definecolor{gold}{HTML}{FDD017}
 
 %\usetheme{Madrid}
 \usetheme{CambridgeUS}
-\definecolor{kugreen}{RGB}{50,93,61}
-\definecolor{kugreenlys}{RGB}{132,158,139}
-\definecolor{kugreenlyslys}{RGB}{173,190,177}
-\definecolor{kugreenlyslyslys}{RGB}{214,223,216}
+%\definecolor{kugreen}{RGB}{50,93,61}
+%\definecolor{kugreenlys}{RGB}{132,158,139}
+%\definecolor{kugreenlyslys}{RGB}{173,190,177}
+%\definecolor{kugreenlyslyslys}{RGB}{214,223,216}
 
-\setbeamercovered{transparent}
-\usecolortheme[named=kugreen]{structure}
+
+%\definecolor{deep sky blue}{HTML}{3BB9FF}
+%\definecolor{light sky blue}{HTML}{82CAFA}
+%
+%\definecolor{mybackground}{HTML}{82CAFA}
+%\definecolor{myforeground}{HTML}{0000A0}
+
+%\setbeamercolor{normal text}{fg=gold,bg=gold}
+%\setbeamercolor{title text}{fg=gold}
+%\setbeamercolor{example text}{fg=gold}
+\setbeamercolor{title}{fg=fabsoft-one}
+\setbeamercolor{frametitle}{fg=fabsoft-one}
+
+
+%\setbeamercolor{background canvas}{fg=myforeground, bg=white}
+%\setbeamercolor{background}{fg=myforeground, bg=mybackground}
+%
+\setbeamercolor{palette primary}{fg=fabsoft-one}
+\setbeamercolor{palette secondary}{fg=fabsoft-one}
+\setbeamercolor{palette tertiary}{fg=white, bg=fabsoft-one}
+
+%\setbeamercovered{transparent}
+
+
+
+%\usecolortheme[named=kugreen]{structure}
 
 \clearpage
 
@@ -347,9 +377,9 @@
 					\hline					
 					\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{TIME}  & \color{white}\textbf{SIGLA} \\
 					\hline
-					\rowcolor{red} 10 & Flamengo & CRF \\
+					\rowcolor{gray-one} 10 & Flamengo & CRF \\
 					\hline
-					\rowcolor{blue} 11 & Fluminense & FFC \\
+					\rowcolor{gray-two} 11 & Fluminense & FFC \\
 					\hline
 					\hline
 			\end{tabular}% Tabulação
@@ -361,13 +391,13 @@
 				\hline					
 				\rowcolor{header-color} \color{white}\textbf{ID} & \color{white}\textbf{NOME}  & \color{white}\textbf{IDADE}  & \color{white}\textbf{TIME\_ID}\\
 				\hline
-				\rowcolor{red} 20  & José & 25 & 10 \\
+				\rowcolor{gray-one} 20  & José & 25 & 10 \\
 				\hline
-				\rowcolor{red}  21  & Mendonça & 31 & 10 \\
+				\rowcolor{gray-one}  21  & Mendonça & 31 & 10 \\
 				\hline
-				\rowcolor{blue} 22 & Daniel & 26 & 11 \\
+				\rowcolor{gray-two} 22 & Daniel & 26 & 11 \\
 				\hline
-				\rowcolor{blue} 23 & Victor & 28 & 11 \\
+				\rowcolor{gray-two} 23 & Victor & 28 & 11 \\
 				\hline
 				\hline
 			\end{tabular}% Tabulação
@@ -500,13 +530,13 @@
 		\begin{itemize}
 			\item Coluna id - INT -Chave Primária
 			\item Coluna nome - VARCHAR
-			\item Coluna nascimento - DATE
+			\item Coluna idade - INT
 		\end{itemize}
 	\end{block}
 	\begin{block}{Cuidado}
 		Comente ou delete as linhas de criação da tabela anterior para que a ferramenta não tente criar novamente a tabela Dividas: (Comentários em SQL são representados por '- -')
 		\begin{minted}{sql}
-		    -- CREATE TABLE dividas(id INT PRIMARY KEY, 
+		    -- CREATE TABLE Dividas(id INT PRIMARY KEY, 
 		    --                      conta VARCHAR(20),
 		    --                      valor DECIMAL
 		    -- );
@@ -519,20 +549,40 @@
 		\begin{minted}{sql}
 		    CREATE TABLE Pessoas(id INT PRIMARY KEY, 
 		    		                     nome VARCHAR, 
-		    		                     nascimento DATE
+		    		                     idade INT
 		    );
 		\end{minted}
 	\end{block}
 \end{frame}
 
 \begin{frame}[fragile]{SQL}{Prática}
-	\begin{block} {SQL - Inserindo Dados na Tabela}
+	\begin{block} {SQL - Inserindo Dados na Tabela - Create}
 		\begin{minted}{sql}
-		    INSERT INTO dividas VALUES (1,'LUZ', 100.52);
+		 INSERT INTO Pessoas VALUES (1,'Luiz Felipe Mello', 20);
+		 INSERT INTO Pessoas VALUES (2,'Ronald Gaspar Viana', 22);
+		\end{minted}
+	\end{block}
+	\vline
+	\begin{block} {SQL - Lendo Dados da Tabela - Read}
+		\begin{minted}{sql}
+		 SELECT * FROM Pessoas;
 		\end{minted}
 	\end{block}
 \end{frame}
 
+\begin{frame}[fragile]{SQL}{Prática}
+	\begin{block} {SQL - Atualizando os Dados da Tabela - Updade}
+		\begin{minted}{sql}
+		 UPDATE Pessoas SET nome = 'Nome Modificado' WHERE id = 1;
+		\end{minted}
+	\end{block}
+	\vline
+	\begin{block} {SQL - Deletando dados da Tabela - Delete}
+		\begin{minted}{sql}
+		 DELETE FROM Pessoas WHERE id = 1;
+		\end{minted}
+	\end{block}
+\end{frame}
 
 %\begin{frame}
 %	\begin{block} {SQL - Criando Tabelas}
@@ -542,19 +592,19 @@
 %	\end{block}
 %\end{frame}
 
-\begin{frame}[fragile]{SQL}{Prática}
-	\begin{block} {SQL - Criando a Tabela Intermediaria - professores\_turmas}
-		\begin{minted}{sql}
-		CREATE TABLE professores_turmas(
-		       id_professor INT, 
-		       id_turma INT, 
-		       FOREIGN KEY(id_professor) REFERENCES professores(id), 
-		       FOREIGN KEY(id_turma) REFERENCES turmas(id)
-		);
-		
-		\end{minted}
-	\end{block}
-\end{frame}
+%\begin{frame}[fragile]{SQL}{Prática}
+%	\begin{block} {SQL - Criando a Tabela Intermediaria - professores\_turmas}
+%		\begin{minted}{sql}
+%		CREATE TABLE professores_turmas(
+%		       id_professor INT, 
+%		       id_turma INT, 
+%		       FOREIGN KEY(id_professor) REFERENCES professores(id), 
+%		       FOREIGN KEY(id_turma) REFERENCES turmas(id)
+%		);
+%		
+%		\end{minted}
+%	\end{block}
+%\end{frame}
 
 \begin{frame}[fragile]{SQL}{Prática}
 	\begin{block} {SQL - Criando a Chave Estrangeira - Documentos}
