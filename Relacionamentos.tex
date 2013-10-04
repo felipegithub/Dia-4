@@ -681,7 +681,7 @@
 %		\end{itemize}
 %	\end{block}
 %\end{frame}
-
+\section{CRUD}
 \begin{frame}[fragile]{CRUD}
 	\begin{block} {\LARGE CRUD}
 		\begin{itemize} \itemsep 2em
@@ -774,14 +774,14 @@
 \end{frame}
 \section{has\_one}
 \begin{frame}[fragile]{Relacionamentos}
-	\begin{block} {\LARGE has\_one e belongs\_to}
+	\begin{block} {\LARGE Um para muitos}
 		\begin{minted}{rb}
-		  	class Person < ActiveRecord::Base
-		  	    has_one :document
+		  	class Pessoa < ActiveRecord::Base
+		  	    has_one :documento
 		  	end
 		  	
-		  	class Document < ActiveRecord::Base
-		  	    belongs_to :person
+		  	class Documento < ActiveRecord::Base
+		  	    belongs_to :pessoa
 		  	end
 		\end{minted}
 	\end{block}
@@ -800,6 +800,95 @@
 	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
 		\begin{minted}{irb}
 			$ rails c
+			=> p = Pessoa.new(nome: "Pedro", idade: 30)
+			=> p.save
+			=> p.create_documento(rg: "2222222", cpf: "22222222222")
+			=> Documento.last
+			
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}
+	\begin{block}{}
+		\begin{minted}{irb}
+	=> #<Documento id: 1, pessoa_id: 1, rg: "2222222", cpf:
+ 	   "22222222222", created_at: "2013-10-04 14:23:07",
+ 	   updated_at: "2013-10-04 14:23:07">
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}
+	\begin{block}{}
+		\begin{minted}{irb}
+		=> p = Pessoa.last
+		=> p.destroy
+		=> Pessoa.last
+		=> Pessoa Load (0.3ms)  SELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" DESC LIMIT 1
+		=> nil
+		=> Documento.last 
+			Documento Load (0.3ms)  SELECT "documentos".*
+			FROM "documentos" ORDER BY "documentos"."id" DESC
+			LIMIT 1
+		=> #<Documento id: 1, pessoa_id: 1, rg: "2222222",
+		cpf: "22222222222", created_at: "2013-10-04
+		14:31:59", updated_at: "2013-10-04 14:31:59">
+				
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{pessoa.rb}
+	\begin{block}{}
+		\begin{minted}{ruby}
+    class Pessoa < ActiveRecord::Base
+      has_one :documento, dependent: :destroy
+    end
+    # Chama o destroy para os objetos associados
+    # (i.e. documento)
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}
+	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
+		\begin{minted}{irb}
+			$ rails c
+			=> p = Pessoa.new(nome: "Pedro", idade: 30)
+			=> p.save
+			=> p.create_documento(rg: "2222222", cpf: "22222222222")		
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}
+	\begin{block}{}
+		\begin{minted}{irb}
+		=> p = Pessoa.last
+		=> p.destroy
+		=> (0.1ms)  begin transaction
+		  Documento Load (3.8ms)  SELECT "documentos".* FROM
+		  "documentos" WHERE "documentos"."pessoa_id" = ?
+		  ORDER BY "documentos"."id" ASC LIMIT 1 
+		  [["pessoa_id", 1]]
+		  SQL (0.4ms)  DELETE FROM "documentos" WHERE
+		  "documentos"."id" = ?  [["id", 1]]
+		  SQL (0.1ms)  DELETE FROM "pessoas" WHERE
+		  "pessoas"."id" = ?  [["id", 1]]
+		  (144.7ms)  commit transaction				
+		\end{minted}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Rails Console}
+	\begin{block}{}
+		\begin{minted}{irb}
+		=> Documento.last
+		=> Documento Load (0.3ms)  SELECT "documentos".*
+		FROM "documentos" ORDER BY "documentos"."id" DESC
+		LIMIT 1
+		=> nil
 		\end{minted}
 	\end{block}
 \end{frame}
@@ -810,8 +899,8 @@
 	\begin{block} {1xn}
 		\begin{minted}{irb}
 		  	$ rails new one_many
-		  	$ rails g model Team name 
-		  	$ rails g model Player name age:integer
+		  	$ rails g model Time nome 
+		  	$ rails g model Jogador nome idade:integer
 		\end{minted}
 	\end{block}
 \end{frame}
@@ -819,12 +908,12 @@
 \begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE has\_many e belongs\_to}
 		\begin{minted}{rb}
-		  	class Team < ActiveRecord::Base
-		  	   has_many :players
+		  	class Time < ActiveRecord::Base
+		  	   has_many :jogadores
 		  	end
 		  	
-		  	class Player < ActiveRecord::Base
-		  	   belongs_to :team
+		  	class Jogador < ActiveRecord::Base
+		  	   belongs_to :time
 		  	end
 		\end{minted}
 	\end{block}
@@ -852,8 +941,8 @@
 	\begin{block} {1xn}
 		\begin{minted}{irb}
 		  	$ rails new many_many
-		  	$ rails g model Classroom name 
-		  	$ rails g model Teacher name
+		  	$ rails g model Turma nome 
+		  	$ rails g model Professor nome
 		\end{minted}
 	\end{block}
 \end{frame}
@@ -861,12 +950,12 @@
 \begin{frame}[fragile]{Relacionamentos}
 	\begin{block} {\LARGE has\_and\_belongs\_to\_many}
 		\begin{minted}{rb}
-		  	class Classroom < ActiveRecord::Base
-		  	    has_and_belongs_to_many :teachers
+		  	class Turma < ActiveRecord::Base
+		  	    has_and_belongs_to_many :professores
 		  	end
 		  	
-		  	class Teacher < ActiveRecord::Base
-		  	    has_and_belongs_to_many :classrooms
+		  	class Professor < ActiveRecord::Base
+		  	    has_and_belongs_to_many :turmas
 		  	end
 		\end{minted}
 	\end{block}
@@ -875,7 +964,7 @@
 \begin{frame}[fragile]{Rails Console}{Nova Tabela precisa ser criada}
 	\begin{block} {1xn}
 		\begin{minted}{irb}
-		  	$ rails g migration create_classrooms_teachers
+		  	$ rails g migration create_turmas_professores
 		\end{minted}
 	\end{block}
 \end{frame}
@@ -884,9 +973,9 @@
 	\begin{block} {\LARGE Nova Migration Essencial}
 		\begin{minted}{rb}
 		    def change
-		        create_table :classrooms_teachers do |t|
-		            t.integer :teacher_id
-		            t.integer :classroom_id			
+		        create_table :turmas_professores do |t|
+		            t.integer :professor_id
+		            t.integer :turma_id			
 		        end
 		    end
 		\end{minted}
