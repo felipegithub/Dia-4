@@ -752,29 +752,38 @@
 			\end{block}
 \end{frame}
 
-\begin{frame}{Relacionamentos}
-	\begin{block} {\LARGE CRUD}
-		\begin{itemize} \itemsep 2em
-			\item{\LARGE has\_one - Pessoa e Documento}
-			\item{\LARGE has\_many - Jogador e Time de Futebol}
-			\item{\LARGE belongs\_to}
-			\item{\LARGE has\_and\_belongs\_to\_many - Professores e Turmas}				
-		\end{itemize}
-	\end{block}
-\end{frame}
+\section{Relacionamentos}
+\begin{frame}{Tipos de Relacionamentos}
 
+		\begin{itemize} \itemsep 2em
+			\item{\LARGE has\_one}
+			\item{\LARGE belongs\_to}
+			\item{\LARGE has\_one :through}	
+		
+		\end{itemize}
+
+\end{frame}
+\begin{frame}{Tipos de Relacionamentos}
+		\begin{itemize} \itemsep 2em
+		    \item{\LARGE has\_many}
+		    \item{\LARGE has\_many :through}
+	    	\item{\LARGE has\_and\_belongs\_to\_many}
+		\end{itemize}
+\end{frame}
+		  
 \begin{frame}[fragile]{Projeto Relacionamentos}
-	\begin{block} {1x1}
+	\begin{block} {\LARGE 1x1}
 		\begin{minted}{irb}
 		  	$ rails new one_one
-		  	$ rails g model Person name age:integer
-		  	$ rails g model Document rg cpf
+		  	$ rails g model Pessoa nome idade:integer
+		  	$ rails g model Documento rg cpf
 		\end{minted}
 	\end{block}
 \end{frame}
+
 \section{has\_one}
-\begin{frame}[fragile]{Relacionamentos}
-	\begin{block} {\LARGE Um para muitos}
+\begin{frame}[fragile]{Relacionamentos RoR}
+	\begin{block} {\LARGE Model}
 		\begin{minted}{rb}
 		  	class Pessoa < ActiveRecord::Base
 		  	    has_one :documento
@@ -786,6 +795,38 @@
 		\end{minted}
 	\end{block}
 \end{frame}
+
+\begin{frame}[fragile]{Relacionamentos RoR}
+	\begin{block}{\LARGE Migration}\fontsize{5}{7}
+		\begin{minted}{rb}
+		class CreatePessoas < ActiveRecord::Migration
+		  def change
+		    create_table :pessoas do |t|
+		      t.string :nome
+		      t.integer :idade
+		    
+		
+		      t.timestamps
+		    end
+		  end
+		end
+		
+				
+		class CreateDocuments < ActiveRecord::Migration
+		  def change
+		    create_table :documents do |t|
+		      t.string :rg
+		      t.string :cpf
+		      t.integer :person_id
+		
+		      t.timestamps
+		    end
+		  end
+		end
+		\end{minted}
+	\end{block}
+\end{frame}
+
 
 \begin{frame}[fragile]{Não Se Esqueça da Migration}
 	\begin{block} {
@@ -800,53 +841,24 @@
 	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
 		\begin{minted}{irb}
 			$ rails c
-			=> p = Pessoa.new(nome: "Pedro", idade: 30)
-			=> p.save
-			=> p.create_documento(rg: "2222222", cpf: "22222222222")
-			=> Documento.last
-			
+			$ p = Pessoa.new(nome: "Alonso", idade: 30)
+			$ p.save
+			$ p.create_documento(rg: "3333333", cpf: "44444444444")
+			$ p.destroy
 		\end{minted}
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Rails Console}
-	\begin{block}{}
-		\begin{minted}{irb}
-	=> #<Documento id: 1, pessoa_id: 1, rg: "2222222", cpf:
- 	   "22222222222", created_at: "2013-10-04 14:23:07",
- 	   updated_at: "2013-10-04 14:23:07">
-		\end{minted}
-	\end{block}
-\end{frame}
-
-\begin{frame}[fragile]{Rails Console}
-	\begin{block}{}
-		\begin{minted}{irb}
-		=> p = Pessoa.last
-		=> p.destroy
-		=> Pessoa.last
-		=> Pessoa Load (0.3ms)  SELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" DESC LIMIT 1
-		=> nil
-		=> Documento.last 
-			Documento Load (0.3ms)  SELECT "documentos".*
-			FROM "documentos" ORDER BY "documentos"."id" DESC
-			LIMIT 1
-		=> #<Documento id: 1, pessoa_id: 1, rg: "2222222",
-		cpf: "22222222222", created_at: "2013-10-04
-		14:31:59", updated_at: "2013-10-04 14:31:59">
-				
-		\end{minted}
-	\end{block}
-\end{frame}
-
-\begin{frame}[fragile]{pessoa.rb}
-	\begin{block}{}
-		\begin{minted}{ruby}
-    class Pessoa < ActiveRecord::Base
-      has_one :documento, dependent: :destroy
-    end
-    # Chama o destroy para os objetos associados
-    # (i.e. documento)
+\begin{frame}[fragile]{Relacionamentos RoR}
+	\begin{block} {\LARGE Model}
+		\begin{minted}{rb}
+		  	class Pessoa < ActiveRecord::Base
+		  	    has_one :documento, dependent: :destroy
+		  	end
+		  	
+		  	class Documento < ActiveRecord::Base
+		  	    belongs_to :pessoa
+		  	end
 		\end{minted}
 	\end{block}
 \end{frame}
@@ -855,43 +867,97 @@
 	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
 		\begin{minted}{irb}
 			$ rails c
-			=> p = Pessoa.new(nome: "Pedro", idade: 30)
-			=> p.save
-			=> p.create_documento(rg: "2222222", cpf: "22222222222")		
+			$ p = Pessoa.new(nome: "Alonso", idade: 30)
+			$ p.save
+			$ p.create_documento(rg: "3333333", cpf: "44444444444")
+			$ p.destroy
 		\end{minted}
 	\end{block}
 \end{frame}
 
-\begin{frame}[fragile]{Rails Console}
-	\begin{block}{}
-		\begin{minted}{irb}
-		=> p = Pessoa.last
-		=> p.destroy
-		=> (0.1ms)  begin transaction
-		  Documento Load (3.8ms)  SELECT "documentos".* FROM
-		  "documentos" WHERE "documentos"."pessoa_id" = ?
-		  ORDER BY "documentos"."id" ASC LIMIT 1 
-		  [["pessoa_id", 1]]
-		  SQL (0.4ms)  DELETE FROM "documentos" WHERE
-		  "documentos"."id" = ?  [["id", 1]]
-		  SQL (0.1ms)  DELETE FROM "pessoas" WHERE
-		  "pessoas"."id" = ?  [["id", 1]]
-		  (144.7ms)  commit transaction				
-		\end{minted}
-	\end{block}
-\end{frame}
-
-\begin{frame}[fragile]{Rails Console}
-	\begin{block}{}
-		\begin{minted}{irb}
-		=> Documento.last
-		=> Documento Load (0.3ms)  SELECT "documentos".*
-		FROM "documentos" ORDER BY "documentos"."id" DESC
-		LIMIT 1
-		=> nil
-		\end{minted}
-	\end{block}
-\end{frame}
+%\begin{frame}[fragile]{Rails Console}
+%	\begin{block}{}
+%		\begin{minted}{irb}
+%	=> #<Documento id: 1, pessoa_id: 1, rg: "2222222", cpf:
+% 	   "22222222222", created_at: "2013-10-04 14:23:07",
+% 	   updated_at: "2013-10-04 14:23:07">
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}[fragile]{Rails Console}
+%	\begin{block}{}
+%		\begin{minted}{irb}
+%		=> p = Pessoa.last
+%		=> p.destroy
+%		=> Pessoa.last
+%		=> Pessoa Load (0.3ms)  SELECT "pessoas".* FROM "pessoas" ORDER BY "pessoas"."id" DESC LIMIT 1
+%		=> nil
+%		=> Documento.last 
+%			Documento Load (0.3ms)  SELECT "documentos".*
+%			FROM "documentos" ORDER BY "documentos"."id" DESC
+%			LIMIT 1
+%		=> #<Documento id: 1, pessoa_id: 1, rg: "2222222",
+%		cpf: "22222222222", created_at: "2013-10-04
+%		14:31:59", updated_at: "2013-10-04 14:31:59">
+%				
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}[fragile]{pessoa.rb}
+%	\begin{block}{}
+%		\begin{minted}{ruby}
+%    class Pessoa < ActiveRecord::Base
+%      has_one :documento, dependent: :destroy
+%    end
+%    # Chama o destroy para os objetos associados
+%    # (i.e. documento)
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}[fragile]{Rails Console}
+%	\begin{block} {\LARGE Testando os Modelos no Rails Cosole}
+%		\begin{minted}{irb}
+%			$ rails c
+%			=> p = Pessoa.new(nome: "Pedro", idade: 30)
+%			=> p.save
+%			=> p.create_documento(rg: "2222222", cpf: "22222222222")		
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}[fragile]{Rails Console}
+%	\begin{block}{}
+%		\begin{minted}{irb}
+%		=> p = Pessoa.last
+%		=> p.destroy
+%		=> (0.1ms)  begin transaction
+%		  Documento Load (3.8ms)  SELECT "documentos".* FROM
+%		  "documentos" WHERE "documentos"."pessoa_id" = ?
+%		  ORDER BY "documentos"."id" ASC LIMIT 1 
+%		  [["pessoa_id", 1]]
+%		  SQL (0.4ms)  DELETE FROM "documentos" WHERE
+%		  "documentos"."id" = ?  [["id", 1]]
+%		  SQL (0.1ms)  DELETE FROM "pessoas" WHERE
+%		  "pessoas"."id" = ?  [["id", 1]]
+%		  (144.7ms)  commit transaction				
+%		\end{minted}
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}[fragile]{Rails Console}
+%	\begin{block}{}
+%		\begin{minted}{irb}
+%		=> Documento.last
+%		=> Documento Load (0.3ms)  SELECT "documentos".*
+%		FROM "documentos" ORDER BY "documentos"."id" DESC
+%		LIMIT 1
+%		=> nil
+%		\end{minted}
+%	\end{block}
+%\end{frame}
 
 
 \section{has\_many}
